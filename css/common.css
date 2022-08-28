@@ -1,0 +1,130 @@
+/* 多网页重复部分的样式 */
+/* 版心 */
+.wrapper 
+{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷导航 */
+.shortcut
+{
+    margin-bottom: 20px;
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper
+{
+    height: 52px;
+}
+.shortcut .wrapper ul
+{
+    float: right;
+}
+.shortcut .wrapper ul li
+{
+    float: left;
+    line-height: 52px;
+}
+.shortcut .wrapper ul li a
+{
+    padding:0px 16px;
+    border-right: 1px solid #666666;
+    font-size: 14px;
+    color:#dcdcdc;
+}
+.shortcut .wrapper ul li a span
+{
+    /* 行内转为行内块 */
+    display: inline-block;
+    margin-right:8px;
+    background-image: url("../images/sprites.png");
+    /* 如果位置有偏差，可以到浏览器检查调整后再回来改 */
+    background-position: -160px -70px;
+    /* 让图和字对齐 */
+    vertical-align: middle;
+    width: 11px;
+    height: 16px;
+}
+.shortcut .wrapper ul li:nth-last-child(1) a
+{
+    padding-left: 16px;
+    border-right:none;
+}
+/* 版权 */
+.footer
+{
+    margin-top: 22px;
+    height: 342px;
+    background-color: #333333;
+}
+.footer .wrapper
+{
+    width: 1393px;
+}
+.footer .wrapper .top
+{
+    padding-top: 60px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 1px solid #434343;
+}
+.footer .wrapper .top ul li
+{
+    position: relative;
+    float: left;
+    /* 如有不同，往小了取，不然容易超出行宽度 */
+    margin-right: 251px;
+    /* 要和图片水平居中显示，要在父级加行高 */
+    line-height: 58px;
+    /* 宽高采取这3个最大的 */
+    width: 195px;
+    height: 58px;
+    color:#fff;
+}
+.footer .wrapper .top ul li span
+{
+    margin-left: 77px;
+    font-size: 26px;
+}
+/* 通过伪元素添加的标签是行内模式 */
+.footer .wrapper .top ul li::before
+{
+    /* 转为行内块 */
+    /* display:inline-block; */
+    /* 有定位不需要上面的两行了 */
+    /* 如果行内块与行内文字无法通过vertical-align/行高对齐，便可以使用定位 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content:"";
+    width: 58px;
+    height: 58px;
+    background-image: url("../images/sprites.png");
+    vertical-align: middle;
+}
+/* 手动改图片位置 */
+.footer .wrapper .top ul li:nth-child(2)::before
+{
+    background-position: -64px 0px;
+}
+.footer .wrapper .top ul li:nth-child(3)::before
+{
+    background-position: -130px 0px;
+}
+.footer .wrapper .top ul li:nth-last-child(1)
+{
+    /* 将最后一个右外边距清0 */
+    margin-right: 0px;
+}
+.footer .bottom p
+{
+    text-align: center;
+    padding-top: 10px;
+    color:#999999;
+    font-size: 14px
+}
+.footer .bottom p a
+{
+    color:#999999;
+    font-size: 14px
+}

@@ -1,0 +1,385 @@
+/* 首页样式 */
+/* 头部 */
+.header
+{
+    height: 70px;
+}
+.header .logo
+{
+    float: left;
+    margin-right: 40px;
+    width: 207px;
+    height: 70px;
+}
+/* logo-SEO搜索引擎优化做法 */
+.header .logo h1
+{
+    width: 207px;
+    height: 70px;
+}
+.header .logo h1 a
+{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url("../images/logo.png");
+    background-size: contain;
+    font-size: 0px;
+}
+
+.header .nav
+{
+    float: left;
+    /* 导航到搜索的边距是文字右边距+导航整体右边距 */
+    margin-right: 34px;
+    height: 70px;
+}
+.header .nav ul li
+{
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+.header .nav ul li a:hover
+{
+    color:#27ba9b;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #27ba9b;
+}
+.header .search
+{
+    /* 子绝父相 */
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+.header .search input
+{ 
+    padding-left: 30px;
+    width: 172px;
+    /* 因为底下有条2px的线，要-2px */
+    height: 28px;
+}
+.header .search input::placeholder
+{
+    font-size: 14px;
+    color:#ccc;
+}
+.header .search span
+{
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    /* 转为行内快 */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/sprites.png");
+    background-position: -79px -69px;
+}
+.header .car a
+{
+    float: left;
+    margin-top:20px;
+    margin-left:20px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../images/sprites.png");
+    background-position: -119px -69px;
+}
+
+.header .car .circle
+{
+    position: relative;
+    top: 10px;
+    right:8px;
+    /* 转为行内块 */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #e26237;
+    border-radius: 50%;
+}
+.header .car .circle p
+{
+    position: absolute;
+    left:5px;
+    text-align: center;
+    color:#fff;
+}
+/* banner轮播图 */
+.banner
+{
+    margin-top: 30px;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper
+{
+    position: relative;
+    height: 500px;
+    background-color: skyblue;
+}
+/* 侧导航 */
+.banner .wrapper .aside
+{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.banner .wrapper .aside  ul li
+{
+    height: 50px;
+    line-height: 50px;
+}
+.banner .wrapper .aside  ul li a
+{
+    position: relative;
+    /* 转为块(宽度和父级一样，所以不用写宽度 */
+    display: block;
+    padding-left: 35px;
+    padding-right: 20px;
+    height: 50px;
+    color:#fff;
+}
+.banner .wrapper .aside  ul li a:hover
+{
+    background-color: #27ba9b;
+}
+.banner .wrapper .aside  ul li a span
+{
+    margin-left: 15px;
+    font-size: 14px;
+}
+/* 在每一项最后加个箭头 */
+.banner .wrapper .aside  ul li a::after
+{
+    content: "";
+    /* 宽高没法直接生效，还要到右边，可以使用定位 */
+    position: absolute;
+    right: 19px;
+    top: 20px;
+    width: 19px;
+    height: 11px;
+    background-image: url("../images/sprites.png");
+    background-position: -80px -110px;
+}
+/* 箭头 */
+.banner .wrapper .prev, .banner .wrapper .next
+{
+    /* 宽高没法直接生效，还要改位置，可以使用定位 */
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url("../images/sprites.png");
+    border-radius: 50%;
+}
+.banner .wrapper .prev
+{
+    left: 260px;
+    /* 要完成精灵图位置还要完成在圆里的位置，如果写在这就要一属性两用，很难调，所以再创建一个span */    /* 上面的方法很麻烦，可以去浏览器检查调试属性后复制下来 */
+    /* 上面的方法很麻烦，可以去浏览器检查调试属性后复制下来 */
+    background-position: 15px -60px;
+}
+.banner .wrapper .next
+{
+    right: 10px;
+    background-position: -22px -60px;
+}
+/* 圆点 */
+.banner .wrapper ol
+{
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    height: 10px;
+}
+.banner .wrapper ol li
+{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-right: 24px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+}
+.banner .wrapper ol .current
+{
+    background-color: rgb(255,255,255);
+}
+/* 新鲜好物 */
+.goods .header
+{
+    height: 114px;
+    line-height: 114px;
+}
+.goods .header h2
+{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height:114px;
+}
+.goods .header h2 span
+{
+    margin-left: 34px;
+    font-size: 16px;
+    color:#999;
+}
+
+.goods .header a , .freshfoods .header a
+{
+    float: right;
+    color:#999;
+}
+.goods .header a::after
+{
+    content: "";
+    /* 转为行内块 */
+    display: inline-block;
+    margin-left: 13px;
+    width: 7px;
+    height: 13px;
+    background-image: url("../images/sprites.png");
+    background-position: 0px -110px;
+    /* 文字与符号对齐 */
+    vertical-align: middle;
+}
+/* 内容 */
+.goods .body ul li
+{
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    text-align: center;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+}
+.goods .body ul li:nth-child(4n)
+{
+    margin-right: 0px;
+}
+.goods .body ul li img
+{
+    width: 304px;
+    height: 305px;
+}
+.goods .body ul li h3
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.goods .body ul li div , .freshfoods .body .right ul li h3 span 
+{
+    color: red;
+}
+.goods .body ul li div span , .freshfoods .body .right ul li h3 span b
+{
+    font-size: 23px;
+}
+.goods .body ul li div span span
+{
+    margin-left:10px;
+    font-size: 25px;
+    color:gold;
+}
+/* 新品标识 */
+.goods .body ul li b
+{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    color: #27ba9b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #27ba9b;
+    border-radius: 3px;
+}
+/* 生鲜 */
+.freshfoods .header
+{
+    height: 96px;
+    line-height: 96px;
+}
+.freshfoods .header h2
+{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+.freshfoods .header .more
+{
+    float: right;
+    margin-left: 65px;
+}
+.freshfoods .header ul
+{
+    float: right;
+}
+.freshfoods .header ul li
+{
+    float: left;
+}
+.freshfoods .header ul li a
+{
+    padding: 0px 7px;
+    margin-right: 6px;
+    color:#000;
+}
+.freshfoods .header ul li a:hover
+{
+    color:#fff;
+    background-color: #27ba9b;
+}
+/* 主体 */
+.freshfoods .body .left
+{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+.freshfoods .body .right
+{
+    float: left;
+    width: 1000px;
+    height: 610px;
+}
+.freshfoods .body .right ul li
+{
+    float: left;
+    margin-right: 5px;
+    margin-bottom:5px;
+}
+.freshfoods .body .right ul li:nth-child(4n)
+{
+    margin-right: 0px;
+}
+.freshfoods .body .right ul li a
+{
+    width: 244px;
+    height: 270px;
+}
+.freshfoods .body .right ul li a img
+{
+    width: 244px;
+    height: 245px;
+}
+.freshfoods .body .right ul li a h3
+{
+    font-size: 6px;
+}
