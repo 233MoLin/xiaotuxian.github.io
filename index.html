@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔鲜er-惠民、快捷、好品、平价！</title>
+    <meta name="description" content="好品 鲜品 绝品 平价品！">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 按顺序引入，外链式样式表后写的生效 -->
+    <!-- 如果作用属性冲突，哪个文件在下面以哪个文件为准 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <!-- 快捷菜单 -->
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li><a href="link.html">请先登录</a></li>
+                <li><a href="link.html">查看声明</a></li>
+                <li><a href="link.html">联系我们</a></li>
+                <li><a href="link.html">联系客服</a></li>
+                <li><a href="link.html"><span></span>手机版</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header wrapper">
+        <div class="logo">
+            <h1>
+                <a href="#">
+                    <!-- 为搜索引擎排名靠前写的：将网站名字写进h1，为了不影响观看设置成font-size:0px; -->
+                    小兔鲜er
+                </a>
+            </h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="link.html">首页</a></li>
+                <li><a href="link.html">购物</a></li>
+                <li><a href="link.html">新品</a></li>
+                <li><a href="link.html">好品</a></li>
+                <li><a href="link.html">生活</a></li>
+                <li><a href="link.html">日用</a></li>
+                <li><a href="link.html">食品</a></li>
+                <li><a href="link.html">电器</a></li>
+                <li><a href="link.html">其它</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <!-- 放大镜 -->
+            <span></span>
+            <input type="text" placeholder="搜一搜">
+        </div>
+        <div class="car">
+            <a href="#"></a>
+            <div class="circle">
+                <p>2</p>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="wrapper">
+            <ul>
+                <!-- 轮播的图数决定li的个数 -->
+                <li>
+                    <a href="#">
+                        <img src="./uploads/banner_1.png" alt="ImagesError" />
+                    </a>
+                </li>
+            </ul>
+            <!-- 侧导航 -->
+            <div class="aside">
+                <ul>
+                    <li>
+                        <a href="#">农产品 <span>水果  蔬菜</span></a>
+                    </li>
+                    <li>
+                        <a href="#">食品 <span>零食  饮料</span></a>
+                    </li>
+                    <li>
+                        <a href="#">电器 <span>电视  空调</span></a>
+                    </li>
+                    <li>
+                        <a href="#">家居 <span>桌椅  架子</span></a>
+                    </li>
+                    <li>
+                        <a href="#">衣服 <span>羽绒  T恤</span></a>
+                    </li>
+                    <li>
+                        <a href="#">汽车 <span>高端  平价</span></a>
+                    </li>
+                    <li>
+                        <a href="#">物件 <span>摆设  玩具</span></a>
+                    </li>
+                    <li>
+                        <a href="#">电子 <span>电脑  手机</span></a>
+                    </li>
+                    <li>
+                        <a href="#">云产品 <span>服务器  数据库</span></a>
+                    </li>
+                    <li>
+                        <a href="#">其它 <span>更多 其余</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 箭头 -->
+            <!--
+                prev 上一张
+                next 下一张
+            -->
+            <a href="#" class="prev">
+                <!-- <span></span> -->
+            </a>
+            <a href="#" class="next">
+                <!-- <span></span> -->
+            </a>
+            <!-- 圆点 -->
+            <ol>
+                <!-- 当前状态: current / active -->
+                <!-- 方便JavaScript进行判断用户点击换图或自动换图 -->
+                <li></li>
+                <li></li>
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <!-- 新鲜好物 -->
+    <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                        <b>新品</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                        <b>新品</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                        <b>新品</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                        <b>新品</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods wrapper">
+        <!-- 常用hd header(头部) -->
+        <div class="header">
+            <!-- 这里超出3.7px到父级外，会影响body的显示效果，需要在CSS中给这个加不超过父级的高 -->
+            <h2>新鲜好物 <span>新鲜出炉，品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 常用bd body(主体) -->
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h3>疯狂吸尘器 Pro Max Plus</h3>
+                        <div>￥<span>899</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h3>超超超智能3D环绕空调 Pro Max</h3>
+                        <div>￥<span>1999</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h3>粤式糯米煲仔饭 Pro</h3>
+                        <div>￥<span>48</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h3>精细智能机械手表 Pro Max Plus+</h3>
+                        <div>￥<span>9999 <span>VIP有优惠</span></span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 生鲜 -->
+    <!-- 英语科普来了。生鲜表示特定种类的视频是可数名词，否则不可数！ -->
+    <div class="freshfoods wrapper">
+        <div class="header">
+            <h2>生鲜</h2>
+            <a href="#" class="more">查看全部</a>
+            <ul>
+                <li><a href="#">水果</a></li>
+                <li><a href="#">蔬菜</a></li>
+                <li><a href="#">肉</a></li>
+                <li><a href="#">蛋</a></li>
+                <li><a href="#">猪肉</a></li>
+                <li><a href="#">牛肉</a></li>
+                <li><a href="#">羊肉</a></li>
+            </ul>
+        </div>
+        <!-- body被撑开，要添加clearfix -->
+        <div class="body clearfix">
+            <div class="left">
+                <a href="#">
+                    <img src="./uploads/fresh_goods_cover.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="#">
+                        <img src="./uploads/fresh_goods_1.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_2.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_3.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_4.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_5.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_6.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_7.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./uploads/fresh_goods_8.jpg" alt="ImagesError">
+                        <h3>无限集团 无限产品<br>999g/装 9个装<br>无限年货<br><span>￥<b>9999</b></span></h3>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li>
+                        <!-- 通过伪元素添加标签 -->
+                        <span>价格亲民</span>
+                    </li>
+                    <li>
+                        <span>物流快捷</span>
+                    </li>
+                    <li>
+                        <span>品质新鲜</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <!-- 能用符号解决的不要css -v- 极 简 主 义 -->
+                    <a href="link.html">关于我们</a> | 
+                    <a href="link.html">帮助中心</a> | 
+                    <a href="link.html">联系客服</a> | 
+                    <a href="link.html">联系我们</a> | 
+                    <a href="link.html">友情链接</a> | 
+                    <a href="link.html">所属公司</a> | 
+                    <a href="link.html">你发现了彩蛋awa</a> | 
+                </p>
+                <p>做到最后我不想做了。。怎么那么难调啊，bug修不好 :( -v-，因为我添加这一行字下面出现了新的bug...
+                </p>
+                <p>
+                    注意:本素材所有来源于网上视频(传智播客)平台，禁止商用，本素材仅供学习（也没人学习我写的这代码吧。。。。）
+                </p>
+                <p>
+                    <a href="link.html">Copyright ® 小兔鲜儿</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
